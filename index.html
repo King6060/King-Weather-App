@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<div class="wrapper">
+    <nav>
+        <div class="logo">
+            <a href="index.html"><img src="weatherpics/weedar.webp" alt=""></a>
+        </div>
+        <div class="nav-bar">
+            <ul>
+                <li id="home"><a href="form.html">Home</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Service</a></li>
+                <li><a href="">About</a></li>
+            </ul>
+        </div>
+   
+        <div class="btns">
+            <button>Sign In</button>
+            <button>Sign Up</button>
+        </div>
+   
+    </nav>
+   
+</div>
+<!----------------------------- Form box ----------------------------------->    
+<div class="form-box">
+       
+    <!------------------- login form -------------------------->
+
+    <div class="login-container" id="login">
+        <div class="top">
+            <span>Don't have an account? <a href="#" onclick="register()">Sign Up</a></span>
+            <header>Login</header>
+        </div>
+        <div class="input-box">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464l349.5 0c-8.9-63.3-63.3-112-129-112l-91.4 0c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3z"/></svg>
+            <input type="text" class="input-field" placeholder="Username or Email" required>
+        </div>
+        <div class="input-box">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M144 144l0 48 160 0 0-48c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192l0-48C80 64.5 144.5 0 224 0s144 64.5 144 144l0 48 16 0c35.3 0 64 28.7 64 64l0 192c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 256c0-35.3 28.7-64 64-64l16 0z"/></svg>
+            <input type="password" class="input-field" placeholder="Password" required>
+        </div>
+        <div class="inputs-box">
+            <input type="submit" class="submit" value="Sign In">
+        </div>
+        <div class="two-col">
+            <div class="one">
+                <input type="checkbox" id="login-check">
+                <label for="login-check"> Remember Me</label>
+            </div>
+            <div class="two">
+                <label><a href="#">Forgot password?</a></label>
+            </div>
+        </div>
+    </div>
+    <script src="form.js"></script>
+</body>
+</html>
